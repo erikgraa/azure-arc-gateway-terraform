@@ -23,7 +23,7 @@ az login
 $env:ARM_SUBSCRIPTION_ID = (az account list | ConvertFrom-Json).id
 terraform init
 terraform plan
-terraform approve
+terraform apply
 ```
 
 ### 2️⃣ Deploy with HCP Terraform
